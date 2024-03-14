@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+} 
+
+.box{
+    padding: 40px;
+}
+
+.card{
+  max-width: 960px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  border-radius: 7px;
+  overflow: hidden;
+  margin: 2rem 1rem;
+}
+
+.div-one{
+  background-color: #fff;
+  grid-column: span 2;
+}
+
+.div-two{
+  background-color: hsl(179, 62%, 43%);
+}
+
+.div-three{
+  background-color: hsl(179, 62%, 50%);
+}
+
+h1{
+    color: hsl(179, 62%, 43%);
+    font-size: 26px;
+    padding-bottom: 12px;
+}
+
+h3{
+    color:  hsl(71, 73%, 54%);
+    padding-bottom: 12px;
+}
+
+.div-one p{
+    color: hsl(218, 22%, 67%);
+    line-height: 1.4;
+}
+
+h2{
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+h5{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+h5 span.price{
+    color: #fff;
+    font-weight: 700;
+    font-size: 28px;
+    padding-right: 10px;
+}
+
+h5 span{
+    color: hsl(204, 43%, 93%);
+    font-weight: 400;
+}
+
+.div-two p{
+    color: #fff;
+}
+
+.div-two a{
+    display: block; /* Takes the full width */
+    background-color: hsl(71, 73%, 54%);
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+    font-size: 13px;
+    padding: 12px 0;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+
+.div-three ul{
+    list-style: none;
+}
+
+.div-three li{
+    color: #fff;
+    padding-bottom: 4px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 425px){
+    .card{
+        grid-template-columns: 100%;
+    }
+
+    .div-one{
+        grid-column: span 1;
+    }
+    
+    .box{
+        padding: 30px;
+    }
+}
+
